@@ -1,0 +1,41 @@
+{
+    "projects": [
+      {
+        "date": "3/10/2023",
+        "title": "Car Search",
+        "description": "Discover the latest car models and find your perfect ride with our Car Search app. Browse through a wide selection of vehicles and explore their features and specifications.",
+        "url": "https://rent-ride-car.vercel.app/",
+        "imgSrc": "https://github.com/Sarhan41/Rent-Ride/raw/master/screenshots/img1.png"
+      },
+      {
+        "date": "6/10/2023",
+        "title": "Hotel Finder",
+        "description": "Plan your next getaway with ease using our Hotel Finder. Explore a variety of accommodations, check availability, and book your stay hassle-free.",
+        "url": "https://stay-find.vercel.app/",
+        "imgSrc":"https://github.com/Sarhan41/stay-finder/raw/master/screenshots/img1.png"
+      },
+      {
+        "date": "12/7/2023",
+        "title": "TECHY STAR",
+        "description": "Immerse yourself in TECHY STAR, an engaging tech showcase developed through guided tutorial videos. Uncover the latest advancements, features, and interactive demos, all presented with a touch of innovation.",
+        "url": "https://one-eight-ivory.vercel.app/",
+        "imgSrc": "https://cdn.pixabay.com/photo/2016/11/21/12/51/mobile-phone-1845233__340.jpg"
+      },
+  
+      {
+        "date": "20/7/2023",
+        "title": "VIDEO HUB",
+        "description": "Step into the world of VIDEO HUB, a dynamic video platform that seamlessly integrates Chakra UI for enhanced user experiences. Access a wide array of entertaining videos, all wrapped in a user-friendly interface.",
+        "url": "https://gaminghub-two.vercel.app",
+        "imgSrc": "https://cdn.pixabay.com/photo/2018/06/07/16/49/virtual-3460451_960_720.jpg"
+      },
+      {
+        "date": "20/8/2023",
+        "title": "PORTFOLIO",
+        "description": "Journey through the comprehensive PORTFOLIO, offering a diverse range of creative projects. Experience the artistry, design and innovations , all encapsulated within a single platform.",
+        "url": "/",
+        "imgSrc": "https://cdn.pixabay.com/photo/2020/03/19/21/25/cactus-4948833_960_720.jpg"
+      }
+   
+    ]
+}

@@ -1,0 +1,105 @@
+@media (max-width: 616px) {
+  .Header {
+    nav {
+
+
+      .header-title h1 {
+        text-align: left;
+        font-size: 1.5rem;
+      }
+
+      main {
+        width: 100%;
+        align-items: center;
+
+        a {
+          font-size: 15px;
+          margin-left:  1rem;
+        }
+      }
+    }
+  }
+
+.home-section {
+    .home-content {
+      max-width: 100%; 
+      margin: 5vh auto 0; 
+      padding-top: 5vh;
+
+      h2 {
+        font-size: 1.5rem; /* Decrease font size for smaller screens */
+        margin-bottom: 0.5rem; 
+      }
+
+      p {
+        font-size: 1rem; /* Decrease font size for smaller screens */
+        margin-bottom: 1rem; /* Adjust margin for smaller screens */
+      }
+
+      .learn-button {
+        font-size: 1rem; /* Decrease font size for smaller screens */
+        padding: 0.3rem 0.8rem; /* Adjust padding for smaller screens */
+
+        a {
+          font-size: 1rem; /* Decrease font size for smaller screens */
+        }
+      }
+    }
+  }
+
+
+  .about-section {
+    .about-content {
+      height: fit-content;
+      flex-direction: column-reverse; /* Stack content in reverse order for better mobile layout */
+      align-items: center; /* Center align content in the column layout */
+
+      .about-image {
+        text-align: center; /* Center align image in the column layout */
+        img {
+          max-width: 80%; /* Reduce image size for smaller screens */
+          margin-bottom: 1rem; /* Add margin below image */
+          animation: none; /* Remove animation for smaller screens */
+        }
+      }
+
+      .about-text {
+        padding: 1rem; /* Adjust padding for better spacing */
+        text-align: center; /* Center align text in the column layout */
+
+        h2 {
+          font-size: 1.5rem; /* Decrease font size for smaller screens */
+          margin-bottom: 0.5rem; /* Adjust margin for smaller screens */
+        }
+
+        p {
+          font-size: 1rem; /* Decrease font size for smaller screens */
+          margin-bottom: 1rem; /* Adjust margin for smaller screens */
+        }
+
+        .orange-text {
+          font-weight: normal; /* Remove bold font weight for smaller screens */
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 412px) {
+  .Header {
+    nav {
+
+
+    
+      main {
+        
+
+        a {
+          font-size: 12px;
+          margin-left:  0.7rem;
+        }
+      }
+    }
+  }
+}

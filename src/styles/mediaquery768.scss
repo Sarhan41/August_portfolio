@@ -1,0 +1,72 @@
+// mediaquery.scss
+
+@media (max-width: 768px) {
+  // Styles for screens up to 768px wide
+
+  .Header {
+    nav {
+      align-items: flex-start;
+
+      main {
+        width: 100%;
+        align-self: center;
+
+        a {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  // .home-section {
+  //   // Modify styles for the home section here
+  //already responsiv
+  // }
+
+  .about-section {
+   
+      .about-content {
+        max-width: 100%; /* Adjust max-width for smaller screens */
+        margin: 0 auto 0 5vh; /* Adjust margins for smaller screens */
+        padding-bottom: 10vh;
+
+        .about-image {
+          img {
+            max-width: 100%; /* Increase image size for better visibility */
+          }
+        }
+
+        .about-text {
+          padding: 1rem; /* Adjust padding for better spacing */
+
+          h2 {
+            font-size: 1.8rem; /* Decrease font size for smaller screens */
+            margin-bottom: 1rem; /* Adjust margin for smaller screens */
+          }
+
+          p {
+            font-size: 1rem; /* Decrease font size for smaller screens */
+            margin-bottom: 1rem; /* Adjust margin for smaller screens */
+          }
+
+          .orange-text {
+            font-weight: normal; /* Remove bold font weight for smaller screens */
+          }
+        }
+      }
+    
+  }
+
+ 
+
+ 
+  
+
+  // .services-section {
+  //   // Modify styles for the services section here
+  // }
+
+  // footer {
+  //   // Modify styles for the footer here
+  // }
+}

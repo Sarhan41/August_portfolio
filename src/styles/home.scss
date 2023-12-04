@@ -1,0 +1,326 @@
+// Home.scss
+
+.home-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  color: #333;
+
+  .home-content {
+    max-width: 800px;
+    text-align: center;
+    margin-top: 10vh; /* Add margin to create space */
+    align-self: flex-start;
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .learn-button {
+      background-color: #ff6600;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      &:hover {
+        background-color: #cc5500;
+      }
+    }
+  }
+}
+
+// About.scss
+
+.about-section {
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .about-image {
+      flex: 1;
+      text-align: right;
+      img {
+        max-width: 100%;
+        animation: imgUp 2s linear infinite alternate;
+        filter: grayscale(40%) brightness(0.6);
+      }
+    }
+    .about-text {
+      text-align: center;
+      flex: 2;
+      padding: 0 2rem;
+      animation: imgUp 2s linear infinite alternate;
+      .orange-text {
+        color: #ff6600; /* Your chosen orange color */
+        font-weight: bold; /* Optional: Add emphasis with bold font */
+      }
+
+      h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  @keyframes imgUp {
+    to {
+      transform: translateY(-10px);
+    }
+  }
+}
+
+//Skills.scss
+
+.skills-section {
+  height: 100vh;
+  background-color: #f4f4f4;
+  padding: 4rem 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+
+  .skills-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 20px;
+    border: 2px solid black;
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      text-decoration: underline;
+    }
+    .skill-icons {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+
+      .skill {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: imgUp 0.7s linear infinite alternate;
+        margin: 1rem;
+        background-color: $first;
+        cursor: pointer;
+        transition: all 0.5s;
+
+        &:hover {
+          filter: invert(1);
+        }
+        @for $i from 1 through 5 {
+          &.skill-#{$i} {
+            animation-delay: calc(0.2s * #{$i + 1});
+          }
+
+          .skill-content2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+              width: 6rem;
+              height: 6rem;
+              object-fit: contain;
+            }
+
+            p.skill-name {
+              font-size: 1rem;
+              margin-top: 0.5rem;
+              text-align: center;
+              font-weight: bold;
+              font: 900 1.2rem $text5;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes imgUp {
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+//Project.scss
+.projects-section {
+  width: 100%;
+  height: 100vh;
+  padding: 8rem 13.13vmax;
+  background: #fff;
+  > h2 {
+    font: 700 2.5rem $text2;
+    width: fit-content;
+    border-bottom: 1px solid #16161698;
+    margin: auto;
+    color: #ff6600;
+  }
+
+  > section {
+    margin-top: 4rem;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > article {
+      width: 70%;
+      height: 25vmax;
+    }
+
+    .workItem {
+      overflow-y: auto;
+      height: 25vmax;
+      width: 95%;
+      margin: auto;
+      background-color: #f4f4f4;
+      display: flex;
+      padding: 2rem;
+      box-shadow: 0 0 20px 5px #fef2f2;
+
+      > img {
+        border-radius: 20px;
+        width: 40%;
+        object-fit: cover;
+      }
+
+      > aside {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        > p {
+          letter-spacing: 3px;
+          line-height: 180%;
+          margin: 2rem;
+        }
+        > a {
+          background-color: #ff6600;
+          padding: 0.7rem 2rem;
+          margin: 2rem;
+          color: #fff;
+          transition: all 0.5s;
+          &:hover {
+            background-color: #ff6610;
+          }
+        }
+      }
+    }
+  }
+}
+
+// service.scss
+
+.services-section {
+  background-color: #f4f4f4ff;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    width: fit-content;
+    border-bottom: 1px solid #16161698;
+    padding: 0.5rem;
+    margin: auto;
+    margin-bottom: 3rem;
+  }
+
+  .full-stack-heading {
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ff6600; // Your chosen orange color
+  }
+
+  .service-icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    height: 50vh;
+
+    .service {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 50vh;
+
+      .service-icon {
+        .img {
+          width: 60vh;
+          height: 40vh;
+          object-fit: contain;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+     
+      }
+      h3 {
+        font-weight: 700;
+        font-size: 2.5rem ;
+        margin-top: 1rem;
+        font-family: $text3;
+      }
+
+      p {
+        font-size: 1.4rem ;
+        line-height: 1.6;
+        margin-top: 1rem;
+        text-align: center;
+        white-space: nowrap; 
+        text-overflow: ellipsis; 
+        max-width: 100%; 
+        font-family: $text4;
+
+      
+    
+      }
+    }
+  }
+}
